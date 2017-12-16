@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/secondView">
+
+    //대피소명
+    <TextView
+        android:id="@+id/shelterNameView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    //위도경도
+    <TextView
+        android:id="@+id/shelterlatlong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="latlong"/>
+
+    //정보제공자
+    <TextView
+        android:id="@+id/shelterProviderView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:hint="provider"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위치"/>
+
+    //대피소 위치
+    <TextView
+        android:id="@+id/shelterLocationView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="location"/>
+
+    //map
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+
+
+
+</LinearLayout>
+

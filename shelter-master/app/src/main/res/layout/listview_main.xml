@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        //대피소 이미지
+        <ImageView
+            android:id="@+id/shelterImageView"
+            android:layout_width="243dp"
+            android:layout_height="172dp"
+            android:scaleType="center"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/shelter_01" />
+
+        //대피소명
+        <TextView
+            android:id="@+id/shelterNameView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:hint="Name"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        //대피소 위치
+        <TextView
+            android:id="@+id/shelterLocationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:hint="location"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        //대피소 정보제공자명
+        <TextView
+            android:id="@+id/shelterProviderView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="2"
+            android:layout_margin="8dp"
+            android:hint="provider"
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/shelterlatlong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:hint="latlong"/>
+    </LinearLayout>
+
+</LinearLayout>
